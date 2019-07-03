@@ -18,3 +18,11 @@ El script acepta las siguientes opciones como argumentos:
 
     --database      -d  El nombre de la base de datos que contiene los contratos
     --collections   -c  El listado de colecciones con documentos OCDS
+
+## Testing
+
+Desde el directorio raíz:
+
+    node testing.js
+
+*Utiliza el archivo tester.json, el cual contiene 4 releases distintos con el mismo ocid, y devuelve el record completo a stdout.*
