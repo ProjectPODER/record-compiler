@@ -1,0 +1,443 @@
+[{
+        "_id": "3f15af34e564f7ec80c5a7384c11cb14c52338ee",
+        "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+        "id": "IA-018TOQ971-N459-2011",
+        "initiationType": "tender",
+        "source": "https://compranet.funcionpublica.gob.mx/esop/guest/go/opportunity/detail?opportunityId=878687",
+        "tag": "contractTermination",
+        "language": "es",
+        "parties": [{
+            "roles": ["buyer"],
+            "parent": "Comisión Federal de Electricidad",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "govLevel": "country",
+            "contactPoint": {
+                "name": "Esther Lucia Navarro Solano"
+            },
+            "address": {
+                "countryName": "Mexico"
+            },
+            "memberOf": {
+                "name": "Comisión Federal de Electricidad",
+                "id": "comision-federal de electricidad"
+            },
+            "identifier": {
+                "scheme": "MX-CPA",
+                "id": "018TOQ971",
+                "legalName": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+                "uri": "https://sites.google.com/site/cnetuc/directorio"
+            }
+        }, {
+            "name": "CASA SOMMER, S.A. de C.V.",
+            "id": "casa-sommer sa de cv",
+            "roles": ["supplier"],
+            "identifier": {
+                "id": "4515",
+                "scheme": "RUPC",
+                "legalName": "CASA SOMMER, S.A. de C.V.",
+                "uri": "https://sites.google.com/site/cnetrupc/rupc"
+            },
+            "details": {
+                "scaleReportedBySupplierMxCnet": "Mediana",
+                "scaleReportedByBuyerMxCnet": "Pequeña"
+            },
+            "address": {
+                "countryName": "MX"
+            }
+        }],
+        "buyer": {
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "consolidatedProcessMxCnet": 0
+        },
+        "tender": {
+            "id": "97250",
+            "title": "INVITACIÓN A CUANDO MENOS TRES PERSONAS NACIONAL N291/426135",
+            "status": "complete",
+            "procurementMethodMxCnet": "Invitación a Cuando Menos 3 Personas",
+            "procurementMethodCharacterMxCnet": "Nacional",
+            "additionalProcurmentCategory": "Adquisiciones",
+            "procurementMethodDetailsTemplateMxCnet": "Z15122015 04. Invitación a cuando menos tres Nacional LAASSP",
+            "contractPeriod": {
+                "multiyearContractMxCnet": 0
+            },
+            "submissionMethod": "Electrónica",
+            "procurementMethod": "limited",
+            "mainProcurementCategory": "goods",
+            "tenderPeriod": {
+                "startDate": "2011-11-04T14:56:00.000Z",
+                "endDate": "2011-11-23T12:00:00.000Z"
+            }
+        },
+        "awards": [{
+            "title": "AISLAMIENTO TERMICO: PART. 7,8,10 y 11.",
+            "suppliers": [{
+                "name": "CASA SOMMER, S.A. de C.V.",
+                "id": "casa-sommer sa de cv"
+            }],
+            "date": "2011-12-01T00:00:00.000Z",
+            "status": "active",
+            "id": "1",
+            "value": {
+                "amount": 368353.35,
+                "currency": "MXN"
+            }
+        }],
+        "contracts": [{
+            "status": "terminated",
+            "statusMxCnet": "Expirado",
+            "title": "AISLAMIENTO TERMICO: PART. 7,8,10 y 11.",
+            "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+            "id": "68684",
+            "awardID": "1",
+            "period": {
+                "startDate": "2011-12-05T00:00:00.000Z",
+                "endDate": "2012-01-11T00:00:00.000Z",
+                "multiyearContractMxCnet": 0
+            },
+            "value": {
+                "amount": 368353.35,
+                "currency": "MXN"
+            },
+            "hasFramework": 0,
+            "filedMxCnet": 1
+        }],
+        "publisher": {
+            "name": "CompraNet / Secretaría de Hacienda y Crédito Público",
+            "uri": "https://sites.google.com/site/cnetuc/descargas"
+        },
+        "date": "2019-01-23T19:18:39.000Z",
+        "dataSource": "compranet-1562094373646"
+    },
+    {
+        "_id": "9c25cc21235ec874690deeab8b00cdd6929e5625",
+        "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+        "id": "IA-018TOQ971-N459-2011",
+        "initiationType": "tender",
+        "source": "https://compranet.funcionpublica.gob.mx/esop/guest/go/opportunity/detail?opportunityId=878687",
+        "tag": "contractTermination",
+        "language": "es",
+        "parties": [{
+            "roles": ["buyer"],
+            "parent": "Comisión Federal de Electricidad",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "govLevel": "country",
+            "contactPoint": {
+                "name": "Esther Lucia Navarro Solano"
+            },
+            "address": {
+                "countryName": "Mexico"
+            },
+            "memberOf": {
+                "name": "Comisión Federal de Electricidad",
+                "id": "comision-federal de electricidad"
+            },
+            "identifier": {
+                "scheme": "MX-CPA",
+                "id": "018TOQ971",
+                "legalName": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+                "uri": "https://sites.google.com/site/cnetuc/directorio"
+            }
+        }, {
+            "name": "AISLAMIENTOS Y REFRACTARIOS DIVERSOS, S.A. de C.V.",
+            "id": "aislamientos-y refractarios diversos sa de cv",
+            "roles": ["supplier"],
+            "details": {
+                "scaleReportedBySupplierMxCnet": "Pequeña",
+                "scaleReportedByBuyerMxCnet": "Pequeña"
+            },
+            "address": {
+                "countryName": "MX"
+            }
+        }],
+        "buyer": {
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "consolidatedProcessMxCnet": 0
+        },
+        "tender": {
+            "id": "97250",
+            "title": "INVITACIÓN A CUANDO MENOS TRES PERSONAS NACIONAL N291/426135",
+            "status": "complete",
+            "procurementMethodMxCnet": "Invitación a Cuando Menos 3 Personas",
+            "procurementMethodCharacterMxCnet": "Nacional",
+            "additionalProcurmentCategory": "Adquisiciones",
+            "procurementMethodDetailsTemplateMxCnet": "Z15122015 04. Invitación a cuando menos tres Nacional LAASSP",
+            "contractPeriod": {
+                "multiyearContractMxCnet": 0
+            },
+            "submissionMethod": "Electrónica",
+            "procurementMethod": "limited",
+            "mainProcurementCategory": "goods",
+            "tenderPeriod": {
+                "startDate": "2011-11-04T14:56:00.000Z",
+                "endDate": "2011-11-23T12:00:00.000Z"
+            }
+        },
+        "awards": [{
+            "title": "AISLAMIENTO TERMICO: PART. 9",
+            "suppliers": [{
+                "name": "AISLAMIENTOS Y REFRACTARIOS DIVERSOS, S.A. de C.V.",
+                "id": "aislamientos-y refractarios diversos sa de cv"
+            }],
+            "date": "2011-12-01T00:00:00.000Z",
+            "status": "active",
+            "id": "1",
+            "value": {
+                "amount": 4500,
+                "currency": "MXN"
+            }
+        }],
+        "contracts": [{
+            "status": "terminated",
+            "statusMxCnet": "Expirado",
+            "title": "AISLAMIENTO TERMICO: PART. 9",
+            "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+            "id": "68686",
+            "awardID": "1",
+            "period": {
+                "startDate": "2011-12-05T00:00:00.000Z",
+                "endDate": "2012-01-11T00:00:00.000Z",
+                "multiyearContractMxCnet": 0
+            },
+            "value": {
+                "amount": 4500,
+                "currency": "MXN"
+            },
+            "hasFramework": 0,
+            "filedMxCnet": 1
+        }],
+        "publisher": {
+            "name": "CompraNet / Secretaría de Hacienda y Crédito Público",
+            "uri": "https://sites.google.com/site/cnetuc/descargas"
+        },
+        "date": "2016-01-23T19:18:39.000Z",
+        "dataSource": "compranet-1562094373646"
+    },
+    {
+        "_id": "5b4fafb2c0bcae40a94af0ca2c6ad5338d44fcf8",
+        "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+        "id": "IA-018TOQ971-N459-2011",
+        "initiationType": "tender",
+        "source": "https://compranet.funcionpublica.gob.mx/esop/guest/go/opportunity/detail?opportunityId=878687",
+        "tag": "contractTermination",
+        "language": "es",
+        "parties": [{
+            "roles": ["buyer"],
+            "parent": "Comisión Federal de Electricidad",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "govLevel": "country",
+            "contactPoint": {
+                "name": "Esther Lucia Navarro Solano"
+            },
+            "address": {
+                "countryName": "Mexico"
+            },
+            "memberOf": {
+                "name": "Comisión Federal de Electricidad",
+                "id": "comision-federal de electricidad"
+            },
+            "identifier": {
+                "scheme": "MX-CPA",
+                "id": "018TOQ971",
+                "legalName": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+                "uri": "https://sites.google.com/site/cnetuc/directorio"
+            }
+        }, {
+            "name": "INSUL THERM, S.A. de C.V.",
+            "id": "insul-therm sa de cv",
+            "roles": ["supplier"],
+            "identifier": {
+                "id": "8551",
+                "scheme": "RUPC",
+                "legalName": "INSUL THERM, S.A. de C.V.",
+                "uri": "https://sites.google.com/site/cnetrupc/rupc"
+            },
+            "details": {
+                "scaleReportedBySupplierMxCnet": "Mediana",
+                "scaleReportedByBuyerMxCnet": "Pequeña"
+            },
+            "address": {
+                "countryName": "MX"
+            }
+        }],
+        "buyer": {
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "consolidatedProcessMxCnet": 0
+        },
+        "tender": {
+            "id": "97250",
+            "title": "INVITACIÓN A CUANDO MENOS TRES PERSONAS NACIONAL N291/426135",
+            "status": "complete",
+            "procurementMethodMxCnet": "Invitación a Cuando Menos 3 Personas",
+            "procurementMethodCharacterMxCnet": "Nacional",
+            "additionalProcurmentCategory": "Adquisiciones",
+            "procurementMethodDetailsTemplateMxCnet": "Z15122015 04. Invitación a cuando menos tres Nacional LAASSP",
+            "contractPeriod": {
+                "multiyearContractMxCnet": 0
+            },
+            "submissionMethod": "Electrónica",
+            "procurementMethod": "limited",
+            "mainProcurementCategory": "goods",
+            "tenderPeriod": {
+                "startDate": "2011-11-04T14:56:00.000Z",
+                "endDate": "2011-11-23T12:00:00.000Z"
+            }
+        },
+        "awards": [{
+            "title": "AISLAMIENTO TERMICO: PART. 3,4,5,6, y 12",
+            "suppliers": [{
+                "name": "INSUL THERM, S.A. de C.V.",
+                "id": "insul-therm sa de cv"
+            }],
+            "date": "2011-12-01T00:00:00.000Z",
+            "status": "active",
+            "id": "1",
+            "value": {
+                "amount": 901994.7,
+                "currency": "MXN"
+            }
+        }],
+        "contracts": [{
+            "status": "terminated",
+            "statusMxCnet": "Expirado",
+            "title": "AISLAMIENTO TERMICO: PART. 3,4,5,6, y 12",
+            "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+            "id": "68685",
+            "awardID": "1",
+            "period": {
+                "startDate": "2011-12-05T00:00:00.000Z",
+                "endDate": "2012-01-11T00:00:00.000Z",
+                "multiyearContractMxCnet": 0
+            },
+            "value": {
+                "amount": 901994.7,
+                "currency": "MXN"
+            },
+            "hasFramework": 0,
+            "filedMxCnet": 1
+        }],
+        "publisher": {
+            "name": "CompraNet / Secretaría de Hacienda y Crédito Público",
+            "uri": "https://sites.google.com/site/cnetuc/descargas"
+        },
+        "date": "2018-01-23T19:18:39.000Z",
+        "dataSource": "compranet-1562094373646"
+    },
+    {
+        "_id": "4cb92776f05ecf49764f50cad6d270ca53a6bc08",
+        "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+        "id": "IA-018TOQ971-N459-2011",
+        "initiationType": "tender",
+        "source": "https://compranet.funcionpublica.gob.mx/esop/guest/go/opportunity/detail?opportunityId=878687",
+        "tag": "contractTermination",
+        "language": "es",
+        "parties": [{
+            "roles": ["buyer"],
+            "parent": "Comisión Federal de Electricidad",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "govLevel": "country",
+            "contactPoint": {
+                "name": "Esther Lucia Navarro Solano"
+            },
+            "address": {
+                "countryName": "Mexico"
+            },
+            "memberOf": {
+                "name": "Comisión Federal de Electricidad",
+                "id": "comision-federal de electricidad"
+            },
+            "identifier": {
+                "scheme": "MX-CPA",
+                "id": "018TOQ971",
+                "legalName": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+                "uri": "https://sites.google.com/site/cnetuc/directorio"
+            }
+        }, {
+            "name": "GRUPO INDUSTRIAL MORGAN, S.A. de C.V.",
+            "id": "grupo-industrial morgan sa de cv",
+            "roles": ["supplier"],
+            "identifier": {
+                "id": "9440",
+                "scheme": "RUPC",
+                "legalName": "GRUPO INDUSTRIAL MORGAN, S.A. de C.V.",
+                "uri": "https://sites.google.com/site/cnetrupc/rupc"
+            },
+            "details": {
+                "scaleReportedBySupplierMxCnet": "Mediana",
+                "scaleReportedByBuyerMxCnet": "Pequeña"
+            },
+            "address": {
+                "countryName": "MX"
+            }
+        }],
+        "buyer": {
+            "name": "Central Termoelectrica Pdte. Adolfo Lopez Mateos",
+            "id": "central-termoelectrica pdt e adolfo lopez mateos",
+            "consolidatedProcessMxCnet": 0
+        },
+        "tender": {
+            "id": "97250",
+            "title": "INVITACIÓN A CUANDO MENOS TRES PERSONAS NACIONAL N291/426135",
+            "status": "complete",
+            "procurementMethodMxCnet": "Invitación a Cuando Menos 3 Personas",
+            "procurementMethodCharacterMxCnet": "Nacional",
+            "additionalProcurmentCategory": "Adquisiciones",
+            "procurementMethodDetailsTemplateMxCnet": "Z15122015 04. Invitación a cuando menos tres Nacional LAASSP",
+            "contractPeriod": {
+                "multiyearContractMxCnet": 0
+            },
+            "submissionMethod": "Electrónica",
+            "procurementMethod": "limited",
+            "mainProcurementCategory": "goods",
+            "tenderPeriod": {
+                "startDate": "2011-11-04T14:56:00.000Z",
+                "endDate": "2011-11-23T12:00:00.000Z"
+            }
+        },
+        "awards": [{
+            "title": "AISLAMIENTO TERMICO: PART. 1 y 2",
+            "suppliers": [{
+                "name": "GRUPO INDUSTRIAL MORGAN, S.A. de C.V.",
+                "id": "grupo-industrial morgan sa de cv"
+            }],
+            "date": "2011-12-01T00:00:00.000Z",
+            "status": "active",
+            "id": "1",
+            "value": {
+                "amount": 197000,
+                "currency": "MXN"
+            }
+        }],
+        "contracts": [{
+            "status": "terminated",
+            "statusMxCnet": "Expirado",
+            "title": "AISLAMIENTO TERMICO: PART. 1 y 2",
+            "ocid": "OCDS-0UD2Q6-IA-018TOQ971-N459-2011",
+            "id": "68687",
+            "awardID": "1",
+            "period": {
+                "startDate": "2011-12-05T00:00:00.000Z",
+                "endDate": "2012-01-11T00:00:00.000Z",
+                "multiyearContractMxCnet": 0
+            },
+            "value": {
+                "amount": 197000,
+                "currency": "MXN"
+            },
+            "hasFramework": 0,
+            "filedMxCnet": 1
+        }],
+        "publisher": {
+            "name": "CompraNet / Secretaría de Hacienda y Crédito Público",
+            "uri": "https://sites.google.com/site/cnetuc/descargas"
+        },
+        "date": "2017-01-23T19:18:39.000Z",
+        "dataSource": "compranet-1562094373646"
+    }
+]
