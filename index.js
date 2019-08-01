@@ -6,39 +6,46 @@ const JSONStream = require('JSONStream');
 const es = require('event-stream');
 const monk = require('monk');
 const commandLineArgs = require('command-line-args');
-const processOCIDs = require('./lib/releases.js')
+const processQueue = require('./lib/releases.js')
 
 const optionDefinitions = [
-  { name: 'sources', alias: 's', type: String, multiple: true },
-  { name: 'database', alias: 'd', type: String }
+    { name: 'collections', alias: 'c', type: String, multiple: true },
+    { name: 'database', alias: 'd', type: String },
+    { name: 'recordType', alias: 'r', type: String },
+    { name: 'host', alias: 'h', type: String },
+    { name: 'port', alias: 'p', type: String }
 ];
 
 const args = commandLineArgs(optionDefinitions);
 
-if(!args.database || !args.sources ) {
+if(!args.database || !args.collections ) {
     console.log('ERROR: missing parameters.');
     process.exit(1);
 }
 
-process.stdin.setEncoding('utf8');
-
-const url = 'mongodb://localhost:27017/' + args.database;
+// Connect to MongoDB and get sources
+const recordType = args.recordType ? args.recordType : 'ocds';
+const url = 'mongodb://' + (args.host ? args.host : 'localhost') + ':' + (args.port ? args.port : '27017') + '/' + args.database;
 const db = monk(url);
 const sources = [];
-args.sources.map( (source) => { sources.push(db.get(source)); } )
-const ocids = [];
+args.collections.map( (collection) => { sources.push(db.get(collection)); } )
+const queue = [];
 
+process.stdin.setEncoding('utf8');
+
+// Read unique identifiers from lines
 process.stdin
     .pipe(es.split())
-    .pipe(es.mapSync(function (ocid) {
-        if(ocid) ocids.push(ocid);
+    .pipe(es.mapSync(function (line) {
+        if(line) queue.push(line);
     }));
 
 process.stdin.on('end', () => {
-    processOCIDs(ocids, sources).then( () => {
-        // hrend = process.hrtime(hrstart);
+    // Send queue and sources to record creator of type recordType
+    processQueue(queue, sources, recordType).then( () => {
+        hrend = process.hrtime(hrstart);
         // console.log('Duration: ' + hrend[0] + '.' + hrend[1] + 's');
         process.exit();
     })
-    .catch( (e) => { console.log(e); } ); // In case of error...
+    .catch( (e) => { console.log(e); process.exit(1); } ); // In case of error...
 });
