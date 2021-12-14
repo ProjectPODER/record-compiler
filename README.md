@@ -1,28 +1,32 @@
 # OCDS Record Compiler
 
-Este script toma un listado de *ocid* únicos separados por newline (**\n**) desde *stdin*, y devuelve objetos de tipo [OCDS Record](http://standard.open-contracting.org/latest/en/schema/records_reference/) por *stdout*, compilados a partir de los [releases](http://standard.open-contracting.org/latest/en/schema/reference/) que se encuentran en las colecciones de MongoDB recibidas como parámetros.
+This script takes a list of unique *id* strings separated by newline (**\n**) from stdin and returns JSON record objects, one object per line. The objects are usually of type [OCDS Record](http://standard.open-contracting.org/latest/en/schema/records_reference/) through *stdout*, compiled from [releases](http://standard.open-contracting.org/latest/en/schema/reference/) contained in the specified Mongo collections. This script can also be used to compile records for the Popolo data standard, and custom types can also be defined.
 
-## Ejemplo de uso
+## Usage
 
-Desde el directorio raíz:
+    node index.js -d DATABASE -c COLLECTION1 COLLECTION2 -r RECORD_TYPE
 
-    node index.js -d quienesquienwiki -c contracts_ocds
+This script is used along with [ocds-unique](http://gitlab.rindecuentas.org/equipo-qqw/ocds-unique) to perform record compilation inside [Poppins](http://gitlab.rindecuentas.org/equipo-qqw/poppins) and then served through the [QQW API](http://gitlab.rindecuentas.org/equipo-qqw/QuienEsQuienApi).
 
-Este script se utiliza en conjunto con [ocds-unique](http://gitlab.rindecuentas.org/equipo-qqw/ocds-unique) para realizar la unificación de releases procesados por [Poppins](http://gitlab.rindecuentas.org/equipo-qqw/poppins) y convertir a los records que devuelve [la API de QQW](http://gitlab.rindecuentas.org/equipo-qqw/QuienEsQuienApi).
+## Options
 
-    node ocds-unique/index.js -d quienesquienwiki -c contracts_ocds | node record-compiler/index.js -d quienesquienwiki -c contracts_ocds
+    --database      -d  Name of Mongo database.
+    --collections   -c  List of Mongo collections.
+    --recordType    -r  Which compilation procedure to use.
+    --host          -h  Mongo host (defaults to localhost).
+    --port          -p  Mongo port (defaults to 27017).
 
-## Opciones
+## Output
 
-El script acepta las siguientes opciones como argumentos:
+The script outputs JSON objects of the specified record type, one object per line.
 
-    --database      -d  El nombre de la base de datos que contiene los contratos
-    --collections   -c  El listado de colecciones con documentos OCDS
+## Record types
 
-## Testing
+Record types are defined inside the *lib/record_types/* folder. The file must be named exampleRecord.js for records of type **example**, and invoked using the -r parameter.
 
-Desde el directorio raíz:
+OCDS records are compiled using the published [merging strategy](https://standard.open-contracting.org/latest/en/schema/merging/), and other record types should also follow this methodology.
 
-    node testing.js
+A custom record type should implement two functions: **recordCreator** and **getIDFieldName**.
 
-*Utiliza el archivo tester.json, el cual contiene 4 releases distintos con el mismo ocid, y devuelve el record completo a stdout.*
+- recordCreator: receives 3 parameters (id string, compiledRelease object, releases array) and should return a JSON record object.
+- getIDFieldName: returns a string specifying the field to use for compilation.
